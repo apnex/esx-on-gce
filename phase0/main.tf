@@ -212,7 +212,7 @@ resource "google_filestore_instance" "ds-vmdk" {
 		name		= "vmdk"
 	}
 	networks {
-		network = google_compute_network.esx-mgmt.name
+		network = google_compute_network.net-mgmt.name
 		modes   = ["MODE_IPV4"]
 	}
 }
