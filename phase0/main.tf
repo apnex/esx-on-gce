@@ -167,7 +167,7 @@ resource "google_compute_firewall" "fw-uplink" {
 }
 
 ## firewall policy for net-vmotion
-resource "google_compute_firewall" "fw-uplink" {
+resource "google_compute_firewall" "fw-vmotion" {
 	project		= module.host-project.project_id
 	name		= "vmotion-inbound"	
 	network		= google_compute_network.net-vmotion.name
