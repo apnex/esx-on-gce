@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source ./get-tfvars.sh
 PROJECT_ID=$(gcloud projects list --name:${HOST_PROJECT_NAME} --format="value(projectId)")
 
 gcloud config set project ${PROJECT_ID}
